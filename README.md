@@ -33,8 +33,7 @@ noob@bender:~ $ sp aux
     cp bash-insulter/src/insults ~/.insults
 
     # Method 2 - I don't care, insult me!
-    sudo wget -O /etc/bash.command-not-found https://raw.githubusercontent.com/tempse/bash-insulter/master/src/bash.command-not-found
-    sudo wget -O ~/.insults https://raw.githubusercontent.com/tempse/bash-insulter/master/src/insults
+    sudo wget -O /etc/bash.command-not-found https://raw.githubusercontent.com/tempse/bash-insulter/master/src/bash.command-not-found && sudo wget -O ~/.insults https://raw.githubusercontent.com/tempse/bash-insulter/master/src/insults
 
 Then source the file automatically for new logins by adding the following to `/etc/bash.bashrc` or any of the other locations where you can configure your shell automatically during login (zsh have different config files):
 ```
