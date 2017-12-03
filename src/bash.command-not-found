@@ -1,3 +1,11 @@
+# enable additional insults
+if [ -f ~/.insults ]; then
+    source ~/.insults
+else
+    insults=()
+fi
+
+
 print_message () {
 
     local messages
@@ -65,6 +73,9 @@ print_message () {
         "If shit was music, you'd be an orchestra."
         "How many times do I have to flush before you go away?"
     )
+
+    # (Un-)comment to toggle custom insults
+    messages+=("${insults[@]}")
 
     # If CMD_NOT_FOUND_MSGS array is populated use those messages instead of the defaults
     [[ -n ${CMD_NOT_FOUND_MSGS} ]] && messages=( "${CMD_NOT_FOUND_MSGS[@]}" )
