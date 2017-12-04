@@ -28,7 +28,7 @@ noob@bender:~ $ sp aux
 # Installation
 
     # Method 1 - know what you are doing
-    git clone https://github.com/hkbakke/bash-insulter.git bash-insulter
+    git clone https://github.com/tempse/bash-insulter.git bash-insulter
     sudo cp bash-insulter/src/bash.command-not-found /etc/
     cp bash-insulter/src/insults ~/.insults
 
